@@ -1,0 +1,7 @@
+
+<h2>Lab 4 = ค่าของ Array = 1 ถึง 10</h2>
+<div *ngFor="let lab of labs">  
+    
+    <p [ngClass]="lab % 2 === 0 ? 'number-even' : 'number-odd'">{{ lab }}</p>
+
+</div>
