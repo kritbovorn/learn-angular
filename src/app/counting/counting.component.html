@@ -1,0 +1,11 @@
+<div>
+    <h2>Count ทีละ 2 ได้เท่ากับ = {{ countNum }}</h2>
+    <button (click)="countTwice()">Count เพิ่มทีหละ 2</button>
+</div>
+
+<ul>
+    <li *ngFor="let item of items">
+        <span *ngIf="item !== 5">{{ item }}</span>
+        <b *ngIf="item === 5">{{ item }}</b>
+    </li>
+</ul>
