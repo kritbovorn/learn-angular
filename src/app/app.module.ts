@@ -12,7 +12,8 @@ import { HeadMenuComponent } from './headmenu/head-menu/head-menu.component';
 import { NavMenuLeftComponent } from './headmenu/nav-menu-left/nav-menu-left.component';
 import { NavMenuRightComponent } from './headmenu/nav-menu-right/nav-menu-right.component';
 import { SearchBarComponent } from './headmenu/search-bar/search-bar.component';
-import { NavCategoryComponent } from './headmenu/nav-category/nav-category.component'
+import { NavCategoryComponent } from './headmenu/nav-category/nav-category.component';
+import { ToDoListComponent } from './to-do-list/to-do-list.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavCategoryComponent } from './headmenu/nav-category/nav-category.compo
     NavMenuLeftComponent,
     NavMenuRightComponent,
     SearchBarComponent,
-    NavCategoryComponent
+    NavCategoryComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,
