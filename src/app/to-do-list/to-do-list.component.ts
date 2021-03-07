@@ -7,18 +7,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ToDoListComponent implements OnInit {
 
-  tasks: string[] = [];
+  tasks = ["boy"];
   
 
-  @Input() task;
+  @Input() task: string = "";
   
 
-  addTask(data: string) {
-    this.tasks.push(data);
+  addTask() {
+    this.tasks.push(this.task);
+    this.task = "";
   }
 
   constructor() { 
-    this.task = "TASKS;"
+    
   }
 
   ngOnInit(): void {

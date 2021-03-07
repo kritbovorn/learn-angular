@@ -1,12 +1,12 @@
 <h1>My Task today</h1>
-<ul >
-    <li ngFor="let task for tasks">
-        <p>{{ task }}</p>
+<ul *ngFor="let item of tasks">
+    <li>
+        {{ item }}
     </li>
+</ul>
 
     <form >
         <Label>Task: </Label>
         <input [(ngModel)]="task">
-        <button (click)="addTask(task)">Add</button>
+        <button (click)="addTask()">Add</button>
     </form>
-</ul>
